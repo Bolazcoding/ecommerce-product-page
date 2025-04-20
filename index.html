@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="./script.js"></script>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-body">
+        <div class="logo-nav">
+          <img
+            class="hamburger-menu hamburger-menu-open"
+            src="./images/icon-menu.svg"
+            alt="icon-menu"
+          />
+
+          <div class="logo">
+            <img
+              class="sneakers-logo"
+              src="./images/logo.svg"
+              alt="Sneakers Logo"
+            />
+          </div>
+          <nav class="navigation">
+            <ul class="list">
+              <li class="list-item"><a href="#">Collections</a></li>
+              <li class="list-item"><a href="#">Men</a></li>
+              <li class="list-item"><a href="#">Women</a></li>
+              <li class="list-item"><a href="#">About</a></li>
+              <li class="list-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="cart-profile">
+          <div class="cart">
+            <img src="./images/icon-cart.svg" alt="icon-cart" />
+          </div>
+          <div class="profile">
+            <img class="profile-pic" src="./images/image-avatar.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-body">
+          <div class="box-container">
+            <div class="box box-bigger">
+              <img
+                class="image-box"
+                src="./images/image-product-1.jpg"
+                alt="product-1"
+              />
+            </div>
+
+            <div class="image-box-thumbnail">
+              <img
+                class="image-thumbnail"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="image-product-1-thumbnail"
+              />
+              <img
+                class="image-thumbnail"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="image-product-2-thumbnail"
+              />
+              <img
+                class="image-thumbnail"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="image-product-3-thumbnail"
+              />
+              <img
+                class="image-thumbnail"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="image-product-4-thumbnail"
+              />
+            </div>
+            <div class="slider-btn mobile-slider">
+              <ion-icon
+                class="icon-slider-btn"
+                name="chevron-back-outline"
+              ></ion-icon>
+
+              <ion-icon
+                class="icon-slider-btn"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="sneakers-description">
+            <p class="company-name">Sneaker Company</p>
+
+            <h1 class="company-title">Fall Limited Edition Sneakers</h1>
+            <p class="company-text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="price-tag">
+              <div class="company-price">
+                <h2 class="normal-price">$125.00</h2>
+                <p class="discount-off">50%</p>
+              </div>
+              <p class="actual-price">$250.00</p>
+            </div>
+
+            <div class="to-cart">
+              <div class="many-to-buy">
+                <img
+                  class="icon-minus"
+                  src="./images/icon-minus.svg"
+                  alt="icon-minus"
+                />
+                <p class="many-to-buy-text">0</p>
+                <img
+                  class="icon-plus"
+                  src="./images/icon-plus.svg"
+                  alt="icon-plus"
+                />
+              </div>
+              <button class="btn" type="submit">
+                <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
+                <span>Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay hidden">
+      <div class="box-container box-c">
+        <div class="box">
+          <img
+            class="image-box image-box-overlay"
+            src="./images/image-product-1.jpg"
+            alt="product-1"
+          />
+        </div>
+
+        <div class="image-box-thumbnail">
+          <img
+            class="image-thumbnail"
+            src="./images/image-product-1-thumbnail.jpg"
+            alt="image-product-1-thumbnail"
+          />
+          <img
+            class="image-thumbnail"
+            src="./images/image-product-2-thumbnail.jpg"
+            alt="image-product-2-thumbnail"
+          />
+          <img
+            class="image-thumbnail"
+            src="./images/image-product-3-thumbnail.jpg"
+            alt="image-product-3-thumbnail"
+          />
+          <img
+            class="image-thumbnail"
+            src="./images/image-product-4-thumbnail.jpg"
+            alt="image-product-4-thumbnail"
+          />
+        </div>
+
+        <div class="slider-btn">
+          <ion-icon
+            class="icon-slider-btn"
+            name="chevron-back-outline"
+          ></ion-icon>
+
+          <ion-icon
+            class="icon-slider-btn"
+            name="chevron-forward-outline"
+          ></ion-icon>
+        </div>
+
+        <div class="slider-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-checkout-container">
+      <!-- <div class="cart-empty-body">
+        <h2 class="cart-empty-header">Cart</h2>
+        <div class="horizontal-line"></div>
+        <div class="cart-empty-container">
+          <p class="cart-empty-text">Your cart is empty.</p>
+        </div>
+      </div> -->
+
+      <div class="cart-checkout-body">
+        <h2 class="cart-empty-header cart-checkout-header">Cart</h2>
+        <div class="horizontal-line"></div>
+        <div class="cart-checkout">
+          <div class="cart-check">
+            <img
+              class="image-product"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <div class="cart-checkout-details">
+              <p class="cart-checkout-product">Fall Limited Edition Sneakers</p>
+              <p class="cart-checkout-price">
+                $125.00 x 3 <span class="total-price">$375.00</span>
+              </p>
+            </div>
+            <img
+              class="clear-checkout"
+              src="./images/icon-delete.svg"
+              alt="icon-delete"
+            />
+          </div>
+          <button class="btn btn-checkout" type="submit">
+            <span>Checkout</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="aside-sidebar">
+      <div class="sidebar">
+        <div class="aside">
+          <div class="hamburger-image">
+            <img
+              class="hamburger-menu hamburger-menu-close"
+              src="./images/icon-close.svg"
+              alt="icon-close"
+            />
+          </div>
+        </div>
+        <nav class="nav-sidebar">
+          <ul class="list list-sidebar">
+            <li class="list-item list-menu"><a href="#">Collections</a></li>
+            <li class="list-item list-menu"><a href="#new">Men</a></li>
+            <li class="list-item list-menu"><a href="#popular">Women</a></li>
+            <li class="list-item list-menu">
+              <a href="#trending">About</a>
+            </li>
+            <li class="list-item list-menu">
+              <a href="#categories">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Collections Men Women About Contact Sneaker Company Fall Limited Edition
+    Sneakers These low-profile sneakers are your perfect casual wear companion.
+    Featuring a durable rubber outer sole, they’ll withstand everything the
+    weather can offer. $125.00 50% $250.00 0 Add to cart -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
