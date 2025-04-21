@@ -59,13 +59,36 @@
     <main>
       <section>
         <div class="section-body">
-          <div class="box-container">
+          <div class="box-container box-d">
             <div class="box box-bigger">
-              <img
-                class="image-box"
-                src="./images/image-product-1.jpg"
-                alt="product-1"
-              />
+              <div class="slide product-image">
+                <img
+                  class="image-box"
+                  src="./images/image-product-1.jpg"
+                  alt="product-1"
+                />
+              </div>
+              <!-- <div class="slide product-image">
+                <img
+                  class="image-box"
+                  src="./images/image-product-2.jpg"
+                  alt="product-2"
+                />
+              </div>
+              <div class="slide product-image">
+                <img
+                  class="image-box"
+                  src="./images/image-product-3.jpg"
+                  alt="product-3"
+                />
+              </div>
+              <div class="slide product-image">
+                <img
+                  class="image-box"
+                  src="./images/image-product-4.jpg"
+                  alt="product-4"
+                />
+              </div> -->
             </div>
 
             <div class="image-box-thumbnail">
@@ -92,12 +115,12 @@
             </div>
             <div class="slider-btn mobile-slider">
               <ion-icon
-                class="icon-slider-btn"
+                class="icon-slider-btn slider__btn--left"
                 name="chevron-back-outline"
               ></ion-icon>
 
               <ion-icon
-                class="icon-slider-btn"
+                class="icon-slider-btn slider__btn--right"
                 name="chevron-forward-outline"
               ></ion-icon>
             </div>
@@ -135,7 +158,7 @@
                   alt="icon-plus"
                 />
               </div>
-              <button class="btn" type="submit">
+              <button class="btn add-to-cart" type="submit">
                 <ion-icon class="icon-cart" name="cart-outline"></ion-icon>
                 <span>Add to cart</span>
               </button>
@@ -180,12 +203,12 @@
 
         <div class="slider-btn">
           <ion-icon
-            class="icon-slider-btn"
+            class="icon-slider-btn slider__btn--left"
             name="chevron-back-outline"
           ></ion-icon>
 
           <ion-icon
-            class="icon-slider-btn"
+            class="icon-slider-btn slider__btn--right"
             name="chevron-forward-outline"
           ></ion-icon>
         </div>
@@ -197,13 +220,13 @@
     </div>
 
     <div class="cart-checkout-container">
-      <!-- <div class="cart-empty-body">
+      <div class="cart-empty-body">
         <h2 class="cart-empty-header">Cart</h2>
         <div class="horizontal-line"></div>
         <div class="cart-empty-container">
           <p class="cart-empty-text">Your cart is empty.</p>
         </div>
-      </div> -->
+      </div>
 
       <div class="cart-checkout-body">
         <h2 class="cart-empty-header cart-checkout-header">Cart</h2>
@@ -218,7 +241,8 @@
             <div class="cart-checkout-details">
               <p class="cart-checkout-product">Fall Limited Edition Sneakers</p>
               <p class="cart-checkout-price">
-                $125.00 x 3 <span class="total-price">$375.00</span>
+                $125.00 x <span class="cart-num">0</span>
+                <span class="total-price">$375.00</span>
               </p>
             </div>
             <img
