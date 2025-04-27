@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--Pale-orange);
   position: relative;
 }
@@ -128,6 +128,10 @@ section {
   width: 8rem;
   border-radius: 1.1rem;
   cursor: pointer;
+}
+
+.active-img {
+  opacity: 80%;
 }
 
 .sneakers-description {
@@ -250,12 +254,17 @@ section {
   color: var(--Very-dark-blue);
 }
 
-/* .box-d {
+/* .box-d{
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
   IN THE END
   overflow: hidden;
 } */
 
-/* .box {
+/* .box-bigger {
   position: absolute;
   top: 0;
   width: 100%;
@@ -267,13 +276,6 @@ section {
 
   THIS creates the animation!
   transition: transform 1s;
-} */
-
-/* .slide > img {
-  Only for images that have different size than slide
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 } */
 
 .box-c {
@@ -557,6 +559,9 @@ section {
     gap: 4rem;
   }
 
+  .box-d {
+    overflow: visible;
+  }
   .cart-checkout-container {
     top: 21%;
     left: 50%;
@@ -575,13 +580,18 @@ section {
     display: none;
   }
 
-  .overlay {
+  /* .overlay {
     height: 100vh;
-  }
+  } */
 
   .mobile-slider {
     display: flex;
     top: 33%;
+    left: 50%;
+  }
+
+  .overlay-btn {
+    top: 50%;
     left: 50%;
   }
 

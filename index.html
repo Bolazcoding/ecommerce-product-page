@@ -59,23 +59,45 @@
     <main>
       <section>
         <div class="section-body">
-          <div class="box-container box-d">
-            <div class="box box-bigger">
-              <div class="slide product-image">
-                <img
-                  class="image-box"
-                  src="./images/image-product-1.jpg"
-                  alt="product-1"
-                />
+          <div class="product-img">
+            <div class="box-container box-d">
+              <div class="box box-bigger">
+                <div class="slide product-image">
+                  <img
+                    class="image-box"
+                    src="./images/image-product-1.jpg"
+                    alt="product-1"
+                  />
+                </div>
               </div>
+              <!-- <div class="box box-bigger">
+                <div class="slide product-image">
+                  <img
+                    class="image-box"
+                    src="./images/image-product-2.jpg"
+                    alt="product-2"
+                  />
+                </div>
+              </div>
+              <div class="box box-bigger">
+                <div class="slide product-image">
+                  <img
+                    class="image-box"
+                    src="./images/image-product-3.jpg"
+                    alt="product-3"
+                  />
+                </div>
+              </div>
+              <div class="box box-bigger">
+                <div class="slide product-image">
+                  <img
+                    class="image-box"
+                    src="./images/image-product-4.jpg"
+                    alt="product-4"
+                  />
+                </div>
+              </div> -->
               <!-- <div class="slide product-image">
-                <img
-                  class="image-box"
-                  src="./images/image-product-2.jpg"
-                  alt="product-2"
-                />
-              </div>
-              <div class="slide product-image">
                 <img
                   class="image-box"
                   src="./images/image-product-3.jpg"
@@ -93,22 +115,22 @@
 
             <div class="image-box-thumbnail">
               <img
-                class="image-thumbnail"
+                class="image-thumbnail image-thumbnail-1 active-img"
                 src="./images/image-product-1-thumbnail.jpg"
                 alt="image-product-1-thumbnail"
               />
               <img
-                class="image-thumbnail"
+                class="image-thumbnail image-thumbnail-2"
                 src="./images/image-product-2-thumbnail.jpg"
                 alt="image-product-2-thumbnail"
               />
               <img
-                class="image-thumbnail"
+                class="image-thumbnail image-thumbnail-3"
                 src="./images/image-product-3-thumbnail.jpg"
                 alt="image-product-3-thumbnail"
               />
               <img
-                class="image-thumbnail"
+                class="image-thumbnail image-thumbnail-4"
                 src="./images/image-product-4-thumbnail.jpg"
                 alt="image-product-4-thumbnail"
               />
@@ -171,37 +193,39 @@
     <div class="overlay hidden">
       <div class="box-container box-c">
         <div class="box">
-          <img
-            class="image-box image-box-overlay"
-            src="./images/image-product-1.jpg"
-            alt="product-1"
-          />
+          <div class="slide product-image">
+            <img
+              class="image-box image-box-overlay"
+              src="./images/image-product-1.jpg"
+              alt="product-1"
+            />
+          </div>
         </div>
 
         <div class="image-box-thumbnail">
           <img
-            class="image-thumbnail"
+            class="image-thumbnail image-thumbnail-1 active-img"
             src="./images/image-product-1-thumbnail.jpg"
             alt="image-product-1-thumbnail"
           />
           <img
-            class="image-thumbnail"
+            class="image-thumbnail image-thumbnail-2"
             src="./images/image-product-2-thumbnail.jpg"
             alt="image-product-2-thumbnail"
           />
           <img
-            class="image-thumbnail"
+            class="image-thumbnail image-thumbnail-3"
             src="./images/image-product-3-thumbnail.jpg"
             alt="image-product-3-thumbnail"
           />
           <img
-            class="image-thumbnail"
+            class="image-thumbnail image-thumbnail-4"
             src="./images/image-product-4-thumbnail.jpg"
             alt="image-product-4-thumbnail"
           />
         </div>
 
-        <div class="slider-btn">
+        <div class="slider-btn overlay-btn">
           <ion-icon
             class="icon-slider-btn slider__btn--left"
             name="chevron-back-outline"
@@ -285,11 +309,6 @@
       </div>
     </aside>
 
-    <!-- Collections Men Women About Contact Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart -->
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -300,3 +319,5 @@
     ></script>
   </body>
 </html>
+
+<!-- https://github.com/marwaas3d/ecommerce-product-page/blob/main/script.js -->
