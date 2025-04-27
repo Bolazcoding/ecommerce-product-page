@@ -13,9 +13,10 @@
     />
 
     <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
 
     <title>Frontend Mentor | E-commerce product page</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -46,11 +47,19 @@
         </div>
 
         <div class="cart-profile">
-          <div class="cart">
-            <img src="./images/icon-cart.svg" alt="icon-cart" />
+          <div class="cart show-after" data-after="">
+            <img
+              class="cart-img"
+              src="./images/icon-cart.svg"
+              alt="icon-cart"
+            />
           </div>
           <div class="profile">
-            <img class="profile-pic" src="./images/image-avatar.png" alt="" />
+            <img
+              class="profile-pic"
+              src="./images/image-avatar.png"
+              alt="Image-avatar"
+            />
           </div>
         </div>
       </div>
@@ -70,47 +79,6 @@
                   />
                 </div>
               </div>
-              <!-- <div class="box box-bigger">
-                <div class="slide product-image">
-                  <img
-                    class="image-box"
-                    src="./images/image-product-2.jpg"
-                    alt="product-2"
-                  />
-                </div>
-              </div>
-              <div class="box box-bigger">
-                <div class="slide product-image">
-                  <img
-                    class="image-box"
-                    src="./images/image-product-3.jpg"
-                    alt="product-3"
-                  />
-                </div>
-              </div>
-              <div class="box box-bigger">
-                <div class="slide product-image">
-                  <img
-                    class="image-box"
-                    src="./images/image-product-4.jpg"
-                    alt="product-4"
-                  />
-                </div>
-              </div> -->
-              <!-- <div class="slide product-image">
-                <img
-                  class="image-box"
-                  src="./images/image-product-3.jpg"
-                  alt="product-3"
-                />
-              </div>
-              <div class="slide product-image">
-                <img
-                  class="image-box"
-                  src="./images/image-product-4.jpg"
-                  alt="product-4"
-                />
-              </div> -->
             </div>
 
             <div class="image-box-thumbnail">
@@ -319,5 +287,3 @@
     ></script>
   </body>
 </html>
-
-<!-- https://github.com/marwaas3d/ecommerce-product-page/blob/main/script.js -->
